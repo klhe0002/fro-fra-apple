@@ -34,9 +34,9 @@ import { useState } from "react";
 import Image from "next/image";
 
 import Navy from "../../../public/navy.png";
-import watch1 from "../../../public/watch1.png";
-import watch2 from "../../../public/watch2.png";
-import watch3 from "../../../public/watch3.png";
+// import watch1 from "../../../public/watch1.png";
+// import watch2 from "../../../public/watch2.png";
+// import watch3 from "../../../public/watch3.png";
 
 import SwitchWatchComponent from "./SwitchWatchComponent";
 import ColorButtonComponent from "./ColorButtonComponent";
@@ -44,6 +44,7 @@ import ColorButtonComponent from "./ColorButtonComponent";
 const HeroComponent = () => {
   // State der styrer, hvilket ur der vises
   const [selectedWatch, setSelectedWatch] = useState(Navy);
+const [activeColor, setActiveColor] = useState(null);
 
   return (
     <section className="hero">
@@ -60,7 +61,8 @@ const HeroComponent = () => {
 
       {/* De små ure sendes som props */}
 
-      <ColorButtonComponent />
+      {/* <ColorButtonComponent setSelectedWatch={setSelectedWatch} /> */}
+      <ColorButtonComponent setSelectedWatch={setSelectedWatch} activeColor={activeColor} setActiveColor={setActiveColor} />
 
       <div className="watches">
         <SwitchWatchComponent setSelectedWatch={setSelectedWatch} />
