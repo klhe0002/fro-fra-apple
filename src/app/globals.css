@@ -22,6 +22,7 @@ h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
   color: var(--text-color);
+  font-family: ;
 }
 
 /* .grid_container {
@@ -73,12 +74,13 @@ h1 {
     a {
       text-decoration: none;
       color: white;
+      padding: 0.3rem 1rem;
     }
 
     a:hover {
       background: white;
       color: var(--background);
-      padding: 0.3rem 1rem;
+
       border-radius: 20px;
     }
   }
@@ -174,10 +176,8 @@ h1 {
 
 .color-button {
   display: grid;
-  gap: 1rem;
-  grid-column: 3;
-  grid-row: 2;
   align-content: center;
+  box-sizing: border-box;
 
   > *:hover {
     cursor: pointer;
@@ -185,14 +185,25 @@ h1 {
   }
 }
 
+.color-button-group {
+  display: grid;
+  gap: 1rem;
+  grid-column: 3;
+  grid-row: 2;
+  align-content: center;
+}
+
+.active-button {
+  border: 1.5px solid white;
+  transform: scale(1.5);
+}
+
 .blue,
 .green,
 .pink {
-  border: 3px solid white;
-  border-radius: 50px;
   width: 20px;
   height: 20px;
-
+  border-radius: 50px;
   justify-self: start; /* or center / end depending on desired horizontal position */
   align-self: start;
 }
