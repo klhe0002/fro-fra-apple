@@ -11,7 +11,7 @@ body {
   grid-template-columns: [full-start] 1fr [content-start] minmax(0, 800px) [hero-start] minmax(0, 800px) [content-end] 1fr [hero-end];
   grid-template-rows: auto 1fr auto;
 }
-hovhovhov
+
 h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
