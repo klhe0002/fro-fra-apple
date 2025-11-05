@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const ColorButton = ({ color, image, setSelectedWatch, isActive, onClick }) => {
   return (
     <div
@@ -13,3 +11,5 @@ const ColorButton = ({ color, image, setSelectedWatch, isActive, onClick }) => {
 };
 
 export default ColorButton;
+
+//color-button

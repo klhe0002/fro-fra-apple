@@ -6,7 +6,7 @@ import { IoSearchOutline } from "react-icons/io5";
 const headerComponent = () => {
   return (
     <nav>
-      <DiApple className="logo" />
+      <DiApple className="h-[30px] w-[30px] cursor-pointer items-center" />
       <ul>
         <li>
           <a href="/">Mac</a>
@@ -24,7 +24,7 @@ const headerComponent = () => {
           <a href="/#">Supprt</a>
         </li>
       </ul>
-      <div className="icons">
+      <div className="flex cursor-pointer items-center gap-1">
         <IoSearchOutline />
         <RxDividerVertical />
         <FiShoppingBag />
@@ -34,3 +34,7 @@ const headerComponent = () => {
 };
 
 export default headerComponent;
+
+//className="logo"
+
+// className="icons"

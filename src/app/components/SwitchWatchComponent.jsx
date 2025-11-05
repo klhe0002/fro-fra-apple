@@ -29,14 +29,33 @@ import bigWatch3 from "../../../public/bigWatch3.png";
 
 const SwitchWatchComponent = ({ setSelectedWatch }) => {
   return (
-    <div className="switch-watch">
-      <div className="watches">
-        <Image src={watch1} alt="Watch 1" onClick={() => setSelectedWatch(bigWatch1)} />
-        <Image src={watch2} alt="Watch 2" onClick={() => setSelectedWatch(bigWatch2)} />
-        <Image src={watch3} alt="Watch 3" onClick={() => setSelectedWatch(bigWatch3)} />
+    <div className="align-center grid col-[content] justify-center  col-start-2 row-span-[1/6]">
+      <div className="grid-span-2/3 2-[100px] row-start-5 flex justify-center gap-4">
+        <Image
+          src={watch1}
+          alt="Watch 1"
+          onClick={() => setSelectedWatch(bigWatch1)}
+          className="w-[100px]"
+        />
+        <Image
+          src={watch2}
+          alt="Watch 2"
+          onClick={() => setSelectedWatch(bigWatch2)}
+          className="w-[100px]"
+        />
+        <Image
+          src={watch3}
+          alt="Watch 3"
+          onClick={() => setSelectedWatch(bigWatch3)}
+          className="w-[100px]"
+        />
       </div>
     </div>
   );
 };
 
 export default SwitchWatchComponent;
+
+//className="switch-watch"
+
+//div className="watches"
