@@ -36,13 +36,13 @@ const HeroComponent = () => {
         setActiveColor={setActiveColor}
       />
 
-      <div className="col-[2/3] row-start-5 flex content-center gap-4">
+      <div className="col-[2/3] row-start-5 flex justify-center">
         <SwitchWatchComponent setSelectedWatch={setSelectedWatch} />
       </div>
 
       <a
         href="#"
-        className="pt-[0.6rem] row-start-3 inline-block self-start rounded-3xl border-5 border-solid border-white pl-3 no-underline"
+        className="button"
       >
         Buy Now
       </a>

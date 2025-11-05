@@ -29,8 +29,8 @@ import bigWatch3 from "../../../public/bigWatch3.png";
 
 const SwitchWatchComponent = ({ setSelectedWatch }) => {
   return (
-    <div className="align-center grid col-[content] justify-center  col-start-2 row-span-[1/6]">
-      <div className="grid-span-2/3 2-[100px] row-start-5 flex justify-center gap-4">
+    <div className="">
+      <div className="flex  gap-10">
         <Image
           src={watch1}
           alt="Watch 1"
